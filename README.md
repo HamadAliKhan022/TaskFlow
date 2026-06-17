@@ -26,7 +26,7 @@ This is a personal task management application. It does not contain an admin pan
 
 ## Main Features
 
-### Authentication
+### Authentication 
 
 * Create a new user account
 * Login using email and password
