@@ -1,6 +1,6 @@
 import { StrictMode } from "react";
 import { createRoot } from "react-dom/client";
-import { BrowserRouter } from "react-router-dom";
+import { HashRouter } from "react-router-dom";
 import { CssBaseline, ThemeProvider } from "@mui/material";
 import { ToastContainer } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
@@ -13,7 +13,7 @@ createRoot(document.getElementById("root")).render(
   <StrictMode>
     <ThemeProvider theme={theme}>
       <CssBaseline />
-      <BrowserRouter>
+      <HashRouter>
         <AuthProvider>
           <App />
           <ToastContainer
@@ -28,7 +28,7 @@ createRoot(document.getElementById("root")).render(
             theme="light"
           />
         </AuthProvider>
-      </BrowserRouter>
+      </HashRouter>
     </ThemeProvider>
-  </StrictMode>,
+  </StrictMode>
 );
